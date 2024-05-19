@@ -1,1 +1,203 @@
 
+@media screen and (max-width: 1000px) {
+    #left-main>h1 {
+        font-size: 3.5rem;
+        font-family: "Georama", sans-serif;
+        font-weight: 300;
+    }
+
+    #left-main>h1>span {
+        font-weight: 600;
+    }
+
+    #right-main {
+        padding: 12% 0;
+        align-items: start;
+    }
+
+    #rotating-images {
+        left: 45%;
+        translate: -50%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 870px) {
+    #morphism-box {
+        left: -10%;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+
+
+    .left-nav>a{
+        font-size: 4vw;
+    }
+
+    .center-nav>a{
+        font-size: 1.6vw;
+    }
+
+    .right-nav .search-box{
+        border-radius: 50%;
+        transition: .5s;
+    }
+    .right-nav .search-box>input{
+        display: none;
+    }
+
+
+
+
+
+
+
+    #main-content {
+        flex-direction: column;
+        justify-content: start;
+        gap: 50px;
+    }
+
+    #left-main {
+        padding: 9% 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #left-main>p {
+        width: 80%;
+    }
+
+    #location{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #search-btn{
+        padding: 8% 16%;
+    }
+
+
+    #rotating-images {
+        height: 36vw;
+        width: 36vw;
+    }
+
+    #right-main {
+        width: 50%;
+    }
+
+    #morphism-box {
+        top: -20%;
+        left: 50%;
+        scale: .7;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .left-nav{
+        width: 50%;
+    }
+    nav>.hamburger-menu{
+        width: 50%;
+        text-align: center;
+        font-size: 4vw;
+        color: #999;
+    }
+
+
+    
+
+    .center-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        height: auto;
+        position: absolute;
+        top: -100%;
+        padding: 20px;
+        transition: .5s;
+    }
+    .center-nav>a{
+        font-size: 5vw;
+        font-family: gilroy-semibold;
+    }
+    .center-nav>.close-nav{
+        display: block;
+        color: #000;
+        font-size: 6vw;
+    }
+    nav>.hamburger-menu{
+        display: block;
+    }
+
+    .right-nav{
+        display: none;
+    }
+
+
+
+
+
+
+    
+
+
+
+
+
+    #left-main>h1{
+        font-size: 3rem;
+    }
+
+
+    #right-main{
+        margin-bottom: 50px;
+    }
+    #morphism-box{
+        top: 80%;
+        left: -100%;
+        translate: 50%;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width:450px) {
+    
+    .left-nav>a{
+        font-size: 6vw;
+    }
+
+    nav>.hamburger-menu{
+        font-size: 5vw;
+    }
+    nav>.hamburger-menu:hover{
+        color: black;
+    }
+}
