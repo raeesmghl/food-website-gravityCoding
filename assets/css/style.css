@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: gilroy-semibold;
+    src: url(/assets/fonts/gilroy/Gilroy-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: gilroy-light;
+    src: url(/assets/fonts/gilroy/Gilroy-Light.ttf);
+}
+
+
+@font-face {
+    font-family: gilroy-medium;
+    src: url(/assets/fonts/gilroy/Gilroy-Medium.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georama", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    min-height: 750px;
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-nav,.right-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 100%;
+    /* background-color: white ; */
+}
+
+
+.left-nav>a{
+    font-size: 2vw;
+    color: #ff8000;
+}
+
+
+
+.center-nav{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.center-nav>a{
+    font-size: 1.2vw;
+    color: #999;
+    font-family: gilroy-medium;
+}
+
+.center-nav>.close-nav{
+    display: none;
+}
+
+nav>.hamburger-menu{
+    display: none;
+}
+
+
+
+.right-nav{
+    gap: 1vw;
+    scale: .8;
+    justify-content: flex-start;
+    
+}
+
+.search-box{
+    /* height: 5vh;
+    width: 12vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5vw;
+    background-color: #fff;
+    padding: 2.5% 4%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.search-box i{
+    font-size: 1.3rem;
+    color: #99999C;
+}
+.search-box>input{
+    padding: .5vh 1vw;  
+    border: none;
+    outline: none;
+    font-family: "Georama", sans-serif;
+}
+
+.right-nav>i{
+    padding: 3%;
+    background-color: #ff8000;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+#main-content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+#left-main{
+    padding: 9%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10%;
+    width: 60%;
+    height: 100%;
+}
+
+#left-main>h1{
+    white-space: nowrap;
+    font-size: 4.5rem;
+    font-family: "Georama", sans-serif;
+    font-weight: 300;
+
+}
+#left-main>h1>span{
+    /* font-family: gilroy-semibold; */
+    font-weight: 600;
+}
+
+
+#left-main>p{
+    width: 90%;
+    font-family: gilroy-light;
+    font-size: .8rem;
+    color: #999;
+}
+
+
+#location{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.location-box{
+    width: 300%;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+#location-input{
+    width: 100%;
+}
+.location-box>i{
+    color: #ff8000;
+}
+
+#search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    font-family: gilroy-semibold;
+    background-color: #ff8000;
+    color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+
+
+
+
+#right-main{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-height: 750px;
+}
+
+#right-main>img{
+    width: 80%;
+}
+
+
+
+#rotating-images{
+    position: absolute;
+    height: 28vw;
+    width: 28vw;
+    animation-name: rotating;
+    animation-duration: 15s ;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    transition: .5s;
+    /* background-color: #ff8000; */
+}
+
+
+#rotating-images>img{
+    position: absolute;
+    animation-name: rotating-plates;
+    animation-duration: 15s ;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    min-width: 50px;
+    max-width: 300px;
+}
+
+#rotating-images>img:first-of-type{
+    width: 35%;
+    top: 0;
+    left: -10%;
+}
+
+#rotating-images>img:nth-of-type(2){
+    width: 50%;
+    top: 0;
+    right: -10%;
+}
+
+#rotating-images>img:last-of-type{
+    width: 55%;
+    bottom: -20%;
+    left: 35%;
+    translate: -50%;
+}
+
+
+
+
+
+#morphism-box{
+    position: absolute;
+    z-index: 100;
+    bottom: 10%;
+    left: -20%;
+    height: 150px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    border-radius: 10px;
+    backdrop-filter: blur(9px);
+    border: 2px solid rgba(240, 248, 255, 0.5);
+}
+
+.header{
+    /* background-color: #c28d57;    */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 4%;
+}
+
+.header>.img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://i.pinimg.com/564x/26/44/68/264468ae307cc9fad28058e3b3484eb4.jpg);
+    background-position: top center;
+    background-size: 300%;
+}
+
+.heading-reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.reviews{
+    background-color: white;
+    color: #ff8000;
+    width: 40%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+#morphism-box>p{
+    font-size: .8rem;
+    font-family: gilroy-medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating-plates {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ##############  POINTER  ################## */
+
+
+#pointer{
+    position: fixed;
+    z-index: 9999;
+    /* transition: .1s; */
+    height: 50px;
+    width: 50px;
+    background-image: url(/assets/images/funny.png);
+    background-position: center;
+    background-size: cover;
+}
