@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>foodies</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/mediaquery.css">
+</head>
+
+<body>
+    <!-- <div id="pointer"></div> -->
+    <div id="main">
+        <nav>
+            <div class="left-nav">
+                <a href="/index.html">foodie</a>
+            </div>
+            <div class="center-nav">
+                <a href="#">menu</a>
+                <a href="#">category</a>
+                <a href="#">about</a>
+                <a href="#">reviews</a>
+                <a href="#">restaurants</a>
+                <i class="ri-close-line close-nav"></i>
+            </div>
+
+            <i class="ri-menu-fill hamburger-menu"></i>
+
+            <div class="right-nav">
+                <div class="search-box">
+                    <i class="ri-search-line"></i>
+                    <input type="text" name="text" id="search-input" placeholder="Search">
+                </div>
+                <i class="ri-shopping-cart-2-line"></i>
+            </div>
+        </nav>
+        <div id="main-content">
+            <div id="left-main">
+                <h1><span>Eat together</span>
+                    <br>
+                    Live another day
+                </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, possimus praesentium, expedita
+                    quaerat corporis odit nam doloribus deleniti officiis aperiam omnis, nemo iure quod repellat tempore
+                    veniam temporibus unde odio.</p>
+
+                <!-- copied from "nav-right" so it addopted all the properties but i've manually changed its property with new name in "left-main"-->
+                <div id="location">
+                    <div class="search-box location-box">
+                        <input type="text" name="text" id="location-input" placeholder="Jandialah Road Sheikhupura">
+                        <i class="ri-crosshair-line"></i>
+                    </div>
+
+                    <div id="search-btn">Search</div>
+                </div>
+
+            </div>
+            <div id="right-main">
+                <img src="assets/images/Group 1.png" alt="">
+
+                <div id="rotating-images">
+                    <img src="assets/images/food1.png" alt="">
+                    <img src="assets/images/food2.png" alt="">
+                    <img src="assets/images/food3.png" alt="">
+                </div>
+
+                <div id="morphism-box">
+                    <div class="header">
+                        <div class="img"></div>
+                        <div class="heading-reviews">
+                            <h4>seafood vegetable</h4>
+                            <div class="reviews">
+                                <i class="ri-star-fill"></i> <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Discovering <span>foodies</span> was a culinary revelation! With its diverse range of recipes and user-friendly interface, it's become my ultimate go-to for all things food.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
